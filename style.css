@@ -1,6 +1,6 @@
 body{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     min-width: 500;
     min-height: 600;
