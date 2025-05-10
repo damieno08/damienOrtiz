@@ -11,8 +11,9 @@ body{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 400px; 
     min-height: 500px;
+    box-sizing: border-box;
+
     background-color: bisque;
     margin: 20px 20px;
 }
