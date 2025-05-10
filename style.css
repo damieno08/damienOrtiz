@@ -1,5 +1,6 @@
 body{
     display:flex;
+    flex-direction: row;
     justify-content: space-between;
     min-width: 500;
     min-height: 600;
