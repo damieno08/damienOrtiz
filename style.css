@@ -40,8 +40,29 @@ h2, h3{
     justify-content: center;
     width: 100%;
 }
-img {
-    display: block;
+.github-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #24292e;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
     margin: 10px auto;
+    width: fit-content;
+}
+
+.github-badge:hover {
+    background-color: #444c56;
+}
+
+.github-badge img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
 }
 
