@@ -19,6 +19,7 @@ body{
 }
 p{
     font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 .badge-base__link.LI-simple-link {
     display: none;  
@@ -27,5 +28,5 @@ p{
     color:black;
     font-family: Arial, sans-serif;
     margin: 10px 0;
-    justify-content: center;
+    text-align: center;
 }
