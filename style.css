@@ -11,6 +11,7 @@ body{
 .Container{
     display:flex;
     flex: 1;
+    overflow: hidden;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -39,6 +40,7 @@ h2, h3{
     display: flex;
     justify-content: center;
     width: 100%;
+    height: auto;
 }
 .github-badge {
     display: flex;
@@ -59,7 +61,6 @@ h2, h3{
 }
 
 .github-badge img {
-
     margin-right: 15px; 
 }
 .github-badge span {
