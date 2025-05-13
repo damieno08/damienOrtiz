@@ -22,7 +22,7 @@ body{
 }
 .mediaContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 p{
     font-family: 'Times New Roman', Times, serif;
