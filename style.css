@@ -65,6 +65,7 @@ h2, h3{
     margin-right: 15px; 
     height: 40px;
     width: 40px;
+    object-fit: contain;
 }
 .github-badge span {
     font-weight: bold;
