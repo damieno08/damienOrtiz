@@ -12,7 +12,7 @@ body{
     display:flex;
     flex: 1;
     overflow: hidden;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 70vh;
@@ -26,6 +26,12 @@ body{
     align-items: center;
     justify-content: space-between;
     
+}
+.imgContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 p{
     font-family: 'Times New Roman', Times, serif;
