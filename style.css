@@ -34,6 +34,9 @@ body{
     justify-content: space-between;
     background-color: bisque;
 }
+.imgContainer > * {
+    flex: 1; 
+  }
 .imgPane{
     display: flex;
     flex-direction: column;
