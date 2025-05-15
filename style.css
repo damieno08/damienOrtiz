@@ -34,6 +34,10 @@ body{
     justify-content: space-between;
     background-color: bisque;
 }
+.imgPane{
+    display: flex;
+    flex-direction: column;
+}
 p{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
