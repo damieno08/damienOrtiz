@@ -34,12 +34,11 @@ body{
     justify-content: space-between;
     background-color: bisque;
 }
-.imgContainer > * {
-    flex: 1; 
-  }
+
 .imgPane{
     display: flex;
     flex-direction: column;
+    max-width: 50%;
 }
 p{
     font-family: 'Times New Roman', Times, serif;
