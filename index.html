@@ -1,66 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Damien Ortiz</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Damien Ortiz - Timeline</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f8fafc;
+      margin: 0;
+      padding: 0;
+      color: #1e293b;
+    }
+
+    .timeline {
+      position: relative;
+      margin: 2rem auto;
+      padding-left: 2rem;
+      max-width: 800px;
+      border-left: 4px solid #6366f1; /* indigo */
+    }
+
+    .timeline-section {
+      position: relative;
+      padding: 2rem 1rem 2rem 2.5rem;
+    }
+
+    .timeline-section::before {
+      content: '';
+      position: absolute;
+      left: -12px;
+      top: 2rem;
+      width: 16px;
+      height: 16px;
+      background-color: #6366f1;
+      border-radius: 50%;
+      border: 3px solid #e0e7ff;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #4338ca;
+      margin-bottom: 0.5rem;
+    }
+
+    h2, h3 {
+      color: #1e293b;
+      margin-top: 1rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    .imgPane {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .imgPane img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .mediaContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .github-badge {
+      display: inline-flex;
+      align-items: center;
+      background: #fff;
+      padding: 0.75rem 1.25rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.75rem;
+      font-weight: 600;
+      color: #1f2937;
+      text-decoration: none;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .github-badge:hover {
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    .github-badge img {
+      width: 32px;
+      height: 32px;
+      margin-right: 0.75rem;
+    }
+
+    /* Mobile-friendly */
+    @media (max-width: 600px) {
+      .timeline-section {
+        padding-left: 2rem;
+      }
+      .imgPane {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-    <section class="Container"> 
-        <h1>Who Am I?</h1>
-        <p>
-            I'm Damien Ortiz, an Electrical and Computer Engineering major at Temple University, going into my sophomore year. I’m from Reading, Pennsylvania, and I love using code and creativity to solve real-world challenges. My passion for engineering comes from a desire to build things that last and make a difference. Whether I’m experimenting with robotics or sketching out ideas for a new project, I’m always learning and striving to grow as a creator and problem-solver.
-            I created this website as a fun way to challenge myself while also allowing others to get to know me.
-        </p>
+
+  <div class="timeline">
+
+    <section class="timeline-section">
+      <h1>Who Am I?</h1>
+      <p>
+        I'm Damien Ortiz, an Electrical and Computer Engineering major at Temple University, going into my sophomore year. I’m from Reading, Pennsylvania, and I love using code and creativity to solve real-world challenges. My passion for engineering comes from a desire to build things that last and make a difference. Whether I’m experimenting with robotics or sketching out ideas for a new project, I’m always learning and striving to grow as a creator and problem-solver.
+      </p>
+      <p>
+        I created this website as a fun way to challenge myself while also allowing others to get to know me.
+      </p>
     </section>
-    <section class="imgContainer">
-    <section class="Container">
-        <h1 class="h"> Education</h1>
-        <h2 class="h">Reading Muhlenberg Career and Technology Center</h2>
-        <p> 
-            -Engineering and Automation Certification<br>
-            -NOCTI Certification<br>
-            -OSHA General Industrial Safety Certification
-        </p>
-        <h3 class="h">Temple University</h3>
-        <p>
-            -Anticipated 2028 graduation with a Bachelor’s in electrical and computer engineering
-        </p>
-    </section>
-    <section class="imgPane">
+
+    <section class="timeline-section">
+      <h1>Education</h1>
+      <h2>Reading Muhlenberg Career and Technology Center</h2>
+      <p>- Engineering and Automation Certification</p>
+      <p>- NOCTI Certification</p>
+      <p>- OSHA General Industrial Safety Certification</p>
+
+      <h3>Temple University</h3>
+      <p>- Anticipated 2028 graduation with a Bachelor’s in Electrical and Computer Engineering</p>
+
+      <div class="imgPane">
         <img src="images/rmctc.jpg" alt="RMCTC">
         <img src="images/templerobot.jpg" alt="Temple">
+      </div>
     </section>
-    
+
+    <section class="timeline-section">
+      <h1>Experience</h1>
+      <h2>East Penn Manufacturing</h2>
+      <p>
+        Worked as an electromechanical technician intern. Had many duties such as troubleshooting acid dispensary systems and replacing sensors, repairing heating systems using megohmmeters and multimeters, and altering PLC programs to reduce errors and increase efficiency.
+      </p>
     </section>
-    <section class="Container">
-        <h1 class="h"> Experience</h1>
-        <h2 class="h"> East Penn Manufacturing</h2>
-        <p> 
-            -Worked as an electromechanical technician intern. Had many duties such as troubleshooting acid dispensary systems and replacing sensors, repairing heating systems using megohmmeters and multimeters, and altering PLC programs to reduce errors and increase efficiency. 
-        </p>
-    </section>
-    <section class="Container">
-        <h1>Media</h1>
-        <section class="mediaContainer">
-            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="damien-ortiz" data-version="v1">
-                <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/damien-ortiz?trk=profile-badge">Damien Ortiz</a>
-            </div>
+
+    <section class="timeline-section">
+      <h1>Media</h1>
+      <div class="mediaContainer">
+        <!-- LinkedIn -->
+        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="damien-ortiz" data-version="v1">
+          <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/damien-ortiz?trk=profile-badge">Damien Ortiz</a>
+        </div>
+
+        <!-- GitHub -->
         <a href="https://github.com/damieno08" class="github-badge" target="_blank">
-            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
-            <span>Damien Ortiz</span>
-          </a>  
-        </section>        
-        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>                  
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+          <span>Damien Ortiz</span>
+        </a>
+      </div>
+      <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     </section>
-    <section class="Container">
-        <h1 class="h"> Contact Information</h1>
-        <p> 
-            Email: damienAnthonyOrtiz@gmail.com<br>
-            Phone: 484-769-4322
-        </p>     
-          
+
+    <section class="timeline-section">
+      <h1>Contact Information</h1>
+      <p>Email: <a href="mailto:damienAnthonyOrtiz@gmail.com">damienAnthonyOrtiz@gmail.com</a></p>
+      <p>Phone: <a href="tel:4847694322">484-769-4322</a></p>
     </section>
+
+  </div>
+
 </body>
 </html>
