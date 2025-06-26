@@ -3,157 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Damien Ortiz - Electrical and Computer Engineering</title>
-    <!-- Tailwind CSS CDN for modern styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter for a clean, professional look -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Apply Inter font and base styling to the entire body */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* Light blue-gray background */
-            color: #334155; /* Dark slate text */
-            line-height: 1.6;
-        }
-
-        /* Ensure images are responsive and have rounded corners */
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 0.75rem; /* rounded-xl */
-            object-fit: cover; /* Ensures images cover their area well */
-        }
-
-        /* Specific styling for the LinkedIn badge */
-        /* This targets the container created by LinkedIn's script */
-        .LI-profile-badge {
-            transform: scale(1.1); /* Slightly enlarge the badge for visibility */
-            transform-origin: center; /* Scale from the center */
-            margin-bottom: 2rem; /* Add some space below */
-        }
-        /* Hide the default link text within the badge, as it's often redundant */
-        .badge-base__link.LI-simple-link {
-            display: none !important;
-        }
-
-        /* Custom styling for the GitHub badge to match overall aesthetic */
-        .github-badge {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #ffffff; /* White background */
-            border: 1px solid #e2e8f0; /* Light border */
-            color: #334155; /* Dark text */
-            text-decoration: none;
-            padding: 1rem 1.5rem; /* Padding inside the badge */
-            border-radius: 0.75rem; /* Rounded corners */
-            font-size: 1.25rem; /* text-xl */
-            font-weight: 600; /* font-semibold */
-            transition: all 0.2s ease-in-out; /* Smooth transition on hover */
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Subtle shadow */
-            width: 100%; /* Take full width on small screens */
-            max-width: 300px; /* Max width on larger screens */
-            text-align: center; /* Center text within the badge */
-        }
-
-        .github-badge:hover {
-            background-color: #f1f5f9; /* Lighter background on hover */
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Enhanced shadow on hover */
-            transform: translateY(-2px); /* Slight lift on hover */
-        }
-
-        .github-badge img {
-            margin-right: 0.75rem; /* Space between logo and text */
-            height: 48px; /* Icon size */
-            width: 48px;
-            border-radius: 0; /* Remove rounded corners for this specific image */
-        }
-
-        /* General heading styles */
-        h1, h2, h3 {
-            font-family: 'Inter', sans-serif;
-            color: #1e293b; /* Darker text for headings */
-            margin-bottom: 0.75rem; /* Consistent spacing below headings */
-        }
-    </style>
+    <title>Damien Ortiz</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen p-4 md:p-8">
-
-    <!-- About Me Section -->
-    <section class="bg-white p-8 md:p-12 lg:p-16 rounded-xl shadow-lg mb-12 mx-auto max-w-5xl text-center">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-indigo-700 mb-6">Who Am I?</h1>
-        <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-            I'm <strong class="font-semibold">Damien Ortiz</strong>, an Electrical and Computer Engineering major at Temple University, going into my sophomore year. I’m from Reading, Pennsylvania, and I love using code and creativity to solve real-world challenges. My passion for engineering comes from a desire to build things that last and make a difference. Whether I’m experimenting with robotics or sketching out ideas for a new project, I’m always learning and striving to grow as a creator and problem-solver.
-        </p>
-        <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+<body>
+    <section class="Container"> 
+        <h1>Who Am I?</h1>
+        <p>
+            I'm Damien Ortiz, an Electrical and Computer Engineering major at Temple University, going into my sophomore year. I’m from Reading, Pennsylvania, and I love using code and creativity to solve real-world challenges. My passion for engineering comes from a desire to build things that last and make a difference. Whether I’m experimenting with robotics or sketching out ideas for a new project, I’m always learning and striving to grow as a creator and problem-solver.
             I created this website as a fun way to challenge myself while also allowing others to get to know me.
         </p>
     </section>
-
-    <!-- Education Section and Images -->
-    <section class="bg-white p-8 md:p-12 lg:p-16 rounded-xl shadow-lg mb-12 mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <!-- Education Text Pane -->
-        <div class="flex flex-col text-center md:text-left">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-700 mb-6">Education</h1>
-
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mt-6 mb-3">Reading Muhlenberg Career and Technology Center</h2>
-            <ul class="list-disc list-inside text-lg md:text-xl text-gray-700 mb-6 space-y-1">
-                <li>Engineering and Automation Certification</li>
-                <li>NOCTI Certification</li>
-                <li>OSHA General Industrial Safety Certification</li>
-            </ul>
-
-            <h3 class="text-xl md:text-2xl font-semibold text-gray-700 mb-3">Temple University</h3>
-            <p class="text-lg md:text-xl text-gray-700">
-                Anticipated 2028 graduation with a Bachelor’s in Electrical and Computer Engineering.
-            </p>
-        </div>
-
-        <!-- Image Pane -->
-        <div class="flex flex-col items-center justify-center gap-6">
-            <img src="image_f3625f.png-0a21d4f6-4797-4f39-86cb-773617e29646" alt="Reading Muhlenberg Career and Technology Center Logo">
-            <img src="image_f35adb.jpg-09963702-9a91-4800-ae10-50aad9a49fe1" alt="Temple University Owl Statue">
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="bg-white p-8 md:p-12 lg:p-16 rounded-xl shadow-lg mb-12 mx-auto max-w-5xl text-center">
-        <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-700 mb-6">Experience</h1>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">East Penn Manufacturing</h2>
-        <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
-            Worked as an electromechanical technician intern. Had many duties such as troubleshooting acid dispensary systems and replacing sensors, repairing heating systems using megohmmeters and multimeters, and altering PLC programs to reduce errors and increase efficiency.
+    <section class="imgContainer">
+    <section class="Container">
+        <h1 class="h"> Education</h1>
+        <h2 class="h">Reading Muhlenberg Career and Technology Center</h2>
+        <p> 
+            -Engineering and Automation Certification<br>
+            -NOCTI Certification<br>
+            -OSHA General Industrial Safety Certification
+        </p>
+        <h3 class="h">Temple University</h3>
+        <p>
+            -Anticipated 2028 graduation with a Bachelor’s in electrical and computer engineering
         </p>
     </section>
-
-    <!-- Media Section -->
-    <section class="bg-white p-8 md:p-12 lg:p-16 rounded-xl shadow-lg mb-12 mx-auto max-w-5xl text-center">
-        <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-700 mb-6">Connect With Me</h1>
-        <div class="flex flex-col md:flex-row items-center justify-center gap-8">
-            <!-- LinkedIn Badge Container -->
-            <div class="flex justify-center items-center">
-                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="damien-ortiz" data-version="v1">
-                    <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/damien-ortiz?trk=profile-badge">Damien Ortiz</a>
-                </div>
+    <section class="imgPane">
+        <img src="images/rmctc.jpg" alt="RMCTC">
+        <img src="images/templerobot.jpg" alt="Temple">
+    </section>
+    
+    </section>
+    <section class="Container">
+        <h1 class="h"> Experience</h1>
+        <h2 class="h"> East Penn Manufacturing</h2>
+        <p> 
+            -Worked as an electromechanical technician intern. Had many duties such as troubleshooting acid dispensary systems and replacing sensors, repairing heating systems using megohmmeters and multimeters, and altering PLC programs to reduce errors and increase efficiency. 
+        </p>
+    </section>
+    <section class="Container">
+        <h1>Media</h1>
+        <section class="mediaContainer">
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="damien-ortiz" data-version="v1">
+                <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/damien-ortiz?trk=profile-badge">Damien Ortiz</a>
             </div>
-            <!-- GitHub Badge -->
-            <a href="https://github.com/damieno08" class="github-badge" target="_blank" rel="noopener noreferrer">
-                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
-                <span>Damien Ortiz</span>
-            </a>
-        </div>
+        <a href="https://github.com/damieno08" class="github-badge" target="_blank">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+            <span>Damien Ortiz</span>
+          </a>  
+        </section>        
+        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>                  
     </section>
-
-    <!-- Contact Information Section -->
-    <section class="bg-white p-8 md:p-12 lg:p-16 rounded-xl shadow-lg mb-8 mx-auto max-w-5xl text-center">
-        <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-700 mb-6">Contact Information</h1>
-        <p class="text-lg md:text-xl text-gray-700">
-            Email: <a href="mailto:damienAnthonyOrtiz@gmail.com" class="text-blue-600 hover:underline">damienAnthonyOrtiz@gmail.com</a><br>
-            Phone: <a href="tel:484-769-4322" class="text-blue-600 hover:underline">484-769-4322</a>
-        </p>
+    <section class="Container">
+        <h1 class="h"> Contact Information</h1>
+        <p> 
+            Email: damienAnthonyOrtiz@gmail.com<br>
+            Phone: 484-769-4322
+        </p>     
+          
     </section>
-
-    <!-- LinkedIn Badge Script (deferred loading) -->
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </body>
 </html>
